@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapBot</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="snap.js"></script>
+</head>
+<body>
+    <h1 class='alignCenter'>SnapBot</h1>
+
+    <div class='tabletop'>
+        <div>
+            <h2 id='playerOneName'>Player One</h2>
+            <p class='playerScore' id='playerOneScore'></p>
+        </div>
+
+        <div class='gameCards'>
+            <div class='cardPile'>
+                <span class='card' id='currentCard'></span>
+                <h2 class='whichCard'>Current</h2>
+            </div>
+            <div class='cardPile'>
+                <span class='card' id='previousCard'></span>
+                <h2 class='whichCard'>Previous</h2>
+            </div>
+        </div>
+        
+        <div>
+            <h2 id='playerTwoName'>Player Two</h2>
+            <p class='playerScore' id='playerTwoScore'></p>
+        </div>
+    </div>
+
+    <div class='alignCenter'>
+        <button id='startGameButton'>Start Game</button>
+    </div>
+
+</body>
+</html>

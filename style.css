@@ -1,0 +1,59 @@
+body {
+    background-color: #184700;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+}
+
+.tabletop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+h2 {
+    color: rgb(170, 170, 170);
+}
+
+.alignCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 200px;
+    width: 150px;
+    margin: 15px;
+    background: #fff;
+    border-radius: 1rem;
+    font-family: monospace;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.cardPile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whichCard {
+    font-size: 1rem;
+}
+
+.gameCards {
+    display: flex;
+}
+
+.playerScore {
+    color: #fff;
+    font-size: 2rem;
+}
+
