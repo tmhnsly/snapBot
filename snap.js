@@ -26,8 +26,8 @@ function shuffle(deck) {
     deck.sort(() => Math.random() - 0.5);
 }
 
-function hideButton(button) {
-    document.getElementById(button).style.display = 'none'
+function hideElement(e) {
+    document.getElementById(e).style.display = 'none'
 }
 
 function scorePoint() {
@@ -92,7 +92,8 @@ function snapCheck(currentCard, previousCard) {
 }
 
 function startGame() {
-    hideButton('startGameButton')
+    hideElement('startGameButton')
+    hideElement('welcomeMessage')
     createDeck()
     shuffle(deck)
     timer = setInterval(flipCard, 1000);
