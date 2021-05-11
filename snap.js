@@ -8,11 +8,9 @@ let previousCard = "";
 let playerTurn;
 let timer;
 
-
 document.getElementById("startGameButton").addEventListener("click", startGame);
 
 function createDeck() {
-
     for(i = 0; i < suits.length; i++){
         for(x = 0; x < values.length; x++){
             let card = {Value: values[x], Suit: suits[i]};
@@ -41,7 +39,6 @@ function scorePoint() {
 
 
 function flipCard() {
-
     let currentCard = deck.pop();
 
     if(deck.length > 0){
@@ -64,7 +61,6 @@ function flipCard() {
 }
 
 function victoryCheck() {
-
     if(playerOneScore === playerTwoScore){
         console.log('It\'s a tie!')
         document.getElementById("playerOneName").innerHTML = "Everybody wins!"
@@ -77,8 +73,6 @@ function victoryCheck() {
         document.getElementById("playerOneName").innerHTML = "Not today 🤖 "
         document.getElementById("playerTwoName").innerHTML = "You win! 🏆"
     }
-
-
 }
 
 function snapCheck(currentCard, previousCard) {
