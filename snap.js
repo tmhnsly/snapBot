@@ -71,9 +71,11 @@ function victoryCheck() {
         document.getElementById("playerTwoName").innerHTML = "Everybody wins!"
     }
     if(playerOneScore > playerTwoScore) {
-        document.getElementById("playerOneName").innerHTML = "You win!"
+        document.getElementById("playerOneName").innerHTML = "You win! 🏆"
+        document.getElementById("playerTwoName").innerHTML = "Not today 🤖 "
     } else {
-        document.getElementById("playerTwoName").innerHTML = "You win!"
+        document.getElementById("playerOneName").innerHTML = "Not today 🤖 "
+        document.getElementById("playerTwoName").innerHTML = "You win! 🏆"
     }
 
 
