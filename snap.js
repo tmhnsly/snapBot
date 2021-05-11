@@ -92,5 +92,5 @@ function startGame() {
     hideElement('welcomeMessage')
     createDeck()
     shuffle(deck)
-    timer = setInterval(flipCard, 1000);
+    timer = setInterval(flipCard, 500);
 }
